@@ -4,6 +4,8 @@ RUN apt-get update
 RUN apt-get upgrade
 RUN apt-get install -y nginx
 RUN apt-get install -y mariadb-server
+RUN apt-get install -y php-fpm
+RUN apt-get install -y systemd
 RUN ./etc/init.d/mysql start
 
 COPY srcs/ /var/www/html
