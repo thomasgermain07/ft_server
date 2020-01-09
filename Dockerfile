@@ -6,6 +6,6 @@ RUN apt-get install -y vim
 RUN mv var/www/html/script.sh /home && mv /var/www/html/default /etc/nginx/sites-available
 RUN chmod +x /home/script.sh
 CMD bash home/script.sh && bash
-# MAINTAINER LEOPOLD LEPAGE <llepage@student.42.fr>
+MAINTAINER LEOPOLD LEPAGE <llepage@student.42.fr>
 EXPOSE 80
 EXPOSE 443

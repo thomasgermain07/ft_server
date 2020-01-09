@@ -1,5 +1,8 @@
 #!bin/bash
 
+mkdir /etc/nginx/ssl
+mkdir /etc/nginx/ssl/localhost/
+mv /var/www/html/*.pem /etc/nginx/ssl/localhost/
 service nginx start
 service php7.3-fpm start
 service mysql start
